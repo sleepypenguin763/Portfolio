@@ -229,7 +229,6 @@ ul {
   transform: translate(-50%, -50%);
   background: linear-gradient(#545454 0%, #373737 100%);
   background-attachment: fixed;
-  border-radius: 20px;
 }
 
 .closed {

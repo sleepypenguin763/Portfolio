@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CS1300 Portfolio</title>
+
+    <!-- CSS / Bootstrap. Using 5.0 but referenced 4.0 guide throughout with some minor changes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/cs1300.css" rel="stylesheet" />
+
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <div style="overflow: hidden">
+      <!-- Bootstrap Navbar: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+      <nav class="navbar navbar-expand-lg mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand navbar-text" href="#" style="margin-left: 5%">Persona & StoryBoard</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="navbar-nav mb-4 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#persona-contex">Contex</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#interface-questions">Research Question</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#interview">Interview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#persona">Persona</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#storyboard">Storyboard</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Persona and Sotry Board assignment -->
+    <section id="persona-contex">
+      <div class="container content-section">
+        <div class="row">
+          <div class="col-lg-12 mt-5">
+            <h1 class="assignment-title">Persona & Story Board</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Contextual Inquiry: Observation of PlayStation 4 Controller</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <p>
+                  Today, there are various gaming consoles and devices that people play games with. I have decided to
+                  focus on one of them, a Play Station 4 controller. Playstation is one of the most widely used gaming
+                  consoles and the controller has a lot of buttons and keys that the user can interact with.
+                  Furthermore, this interface is in public view and it does not only have simple interactive components.
+                  The controller contains multiple buttons, joysticks, triggers, and a touch pad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center" style="width: 100%">
+            <img class="ps4-img rounded" src="img/ps4Controller.JPG" alt="Brief description of the PS4 Controller" />
+            <figcaption style="font-size: 15px">General Design of the PS4 Controller</figcaption>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interface-questions">
+      <br />
+      <div class="container content-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">
+                User Interface Questions: Use and Experience of PS4 Controller Interface
+              </h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <p>
+                  Below are the questions I came up with to ask about the experiences using the interface. It mainly
+                  asks about what to use the console for, since that heavily affects the use of the controller.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="questions" class="row inset-box">
+            <div class="question-box-opaque">
+              <ul class="col-md-12">
+                <strong class="main-question-header">What kind of features do you use in Playstation?</strong>
+                <div class="container">
+                  <li>Do you use it for gaming?</li>
+                  <li>Do you use the controller when using the keyboard function?</li>
+                  <li>
+                    Do you ever go to the Play Station Store using the controller? If so, how do you feel about
+                    navigating through using the controller there?
+                  </li>
+                  <li>
+                    Do you prefer other modes of controlling such as mouse / keyboard rather than using the keyboard?
+                  </li>
+                </div>
+              </ul>
+              <br />
+              <ul class="col-md-12">
+                <strong class="main-question-header">How are the experiences of using the controller?</strong>
+                <div class="container">
+                  <li>Does certain key stop functioning often? If so, which key is most common?</li>
+                  <li>How often do you replace your controller?</li>
+                  <li>If any, is there any buttons/sticks that should be added/removed from the current controller?</li>
+                  <li>Do you prefer wired or wireless controllers?</li>
+                  <li>How often do you change the key mapping of the controller?</li>
+                  <li>Are all keys reachable when holding the controller using two hands?</li>
+                  <li>Have you ever ended up with sore hand after holding on to the controller?</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interview">
+      <br />
+      <div class="container content-section">
+        <div class="container" id="interview-container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Interview and Observation: Comfortableness of PS4 Controller</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>
+                  I observed three users using the play station. Observation section contains the objective Observation
+                  of each user's use case. Interview section is what the user responded to the given questions. These
+                  questions are also noted in the
+                  <a href="#interface-questions">User Interface Questions</a>
+                  section of this page.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p>
+            <!-- Bootstrap collapse: https://getbootstrap.com/docs/4.0/components/collapse/-->>
+            <button
+              id="observation-button"
+              onclick="toggleObservationButton()"
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#observation-collapse"
+              aria-expanded="false"
+              aria-controls="observation-collapse"
+            >
+              View Observations
+            </button>
+            <button
+              id="interview-button"
+              onclick="toggleInterviewButton()"
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#interviews-collapse"
+              aria-expanded="false"
+              aria-controls="interviews-collapse"
+            >
+              View Interviews
+            </button>
+          </p>
+          <div class="collapse multi-collapse" id="observation-collapse">
+            <div id="observations" class="row inset-box">
+              <div class="question-box-opaque">
+                <h2 class="assignment-section fw-bold">Observations</h2>
+                <ul class="col-md-12">
+                  <strong class="main-question-header">User 1</strong>
+                  <div class="container">
+                    <li>Used the original wireless controller sold by PlayStation</li>
+                    <li>All inputs were done using the controller</li>
+                    <li>Played first person shooting (FPS) game</li>
+                    <li>All log-in actions were taken using the controller</li>
+                    <li>
+                      Played the game. Since this is a FPS game, this person used more joy sticks and left right trigger
+                      than other keys
+                    </li>
+                    <li>Did not touch the in-game key mapping settings</li>
+                    <li>
+                      Played over one hour, did not make comments about the hand being sore from holding onto the
+                      controller for long period of time
+                    </li>
+                  </div>
+                </ul>
+                <br />
+                <ul class="col-md-12">
+                  <strong class="main-question-header">User 2</strong>
+                  <div class="container">
+                    <li>
+                      Used wired controller that they bought separately (Still an official controller sold by Sony)
+                    </li>
+                    <li>Also used the converter that allows the use of keyboard and mouse</li>
+                    <li>All alphabetical inputs were done using the keyboard instead of the controller</li>
+                    <li>Played open world game with some fighting / actions involved</li>
+                    <li>Changed some key mapping on the controller through the in game setting</li>
+                    <li>Went back to controller when entering the game</li>
+                    <li>Thumb sticks / joy sticks are very often used to travel around</li>
+                    <li>Played for around an hour, no comments about the controller fit</li>
+                  </div>
+                </ul>
+                <br />
+                <ul class="col-md-12">
+                  <strong class="main-question-header">User 3</strong>
+                  <div class="container">
+                    <li>Used wired controller</li>
+                    <li>Walked into the store to browse through potential game to purchase</li>
+                    <li>Watched promotion video</li>
+                    <li>Purchased the game and used controller throughout(asked after completing the payment)</li>
+                    <li>
+                      Mainly used the arrow keys on the left hand side of the controller to navigate through the store
+                    </li>
+                    <li>
+                      Not much use of the controller compared to previous two users as this person did not end up
+                      playing the game for the day
+                    </li>
+                    <li>Was about to trip over the wire portion of the controller when walking around</li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="interviews-collapse">
+            <div id="interviews" class="row inset-box">
+              <div class="question-box-opaque">
+                <h2 class="assignment-section fw-bold">Interview</h2>
+                <ul class="col-md-12">
+                  <strong class="main-question-header">What kind of features do you use in Playstation?</strong>
+                  <div class="container">
+                    <li>Controllers are mainly used for gaming and browsing through settings / stores</li>
+                    <li>None of the user I interviewed streamed a game through PS4 so no opinions on that</li>
+                    <li>Users never used web browser within PlayStation</li>
+                  </div>
+                </ul>
+                <br />
+                <ul class="col-md-12">
+                  <strong class="main-question-header"
+                    >How often do you replace your controller? What is the main reason for replacement?</strong
+                  >
+                  <div class="container">
+                    <li>
+                      User 1 mentioned that the joy stick sometimes stops functioning. This user assumed that it is
+                      because FPS games require consistent joystick movement, causing the sticks to deplete quickly.
+                    </li>
+                    <li>User 2 and User 3 never had a need of replacing the controller nor the cable</li>
+                    <li>
+                      Major concerns about the controller was that joy sticks and triggers are easier to break than the
+                      buttons
+                    </li>
+                  </div>
+                </ul>
+                <br />
+                <ul class="col-md-12">
+                  <strong class="main-question-header"
+                    >If any, is there any functionality that should be added / removed / changed from the current
+                    controller?</strong
+                  >
+                  <div class="container">
+                    <li>Input that uses Keyboard on the monitor screen can be annoying to use from time to time</li>
+                    <li>Setting up wired and wireless mics and headphones are sometimes confusing</li>
+                    <li>Direction buttons on the left hand side of the controller is a bit small</li>
+                    <li>
+                      Pressing down on the joy stick to use it as a button can be hard without moving the joy stick
+                    </li>
+                  </div>
+                </ul>
+                <br />
+                <ul class="col-md-12">
+                  <strong class="main-question-header">Do you prefer wired or wireless controllers?</strong>
+                  <div class="container">
+                    <li>All users prefered wireles controller over wired ones</li>
+                    <li>
+                      Player does not have to worry about the length of the cable when using the wireless controller
+                    </li>
+                    <li>
+                      Easier access and use of mouse and keyboard (aka without the use of converters), especially when
+                      not playing games can be useful
+                    </li>
+                  </div>
+                </ul>
+                <br />
+                <ul class="col-md-12">
+                  <strong class="main-question-header">Does the controller fit well to your hand? </strong>
+                  <div class="container">
+                    <li>Joy sticks are a bit too large for people with smaller hands</li>
+                    <li>Sometimes encounter the difficulty of pressing the X button while using the right joystick</li>
+                    <li>
+                      All users said that the controller fits their hand well in general, and does not hurt even after
+                      holding on to it for long period of tiem
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="persona">
+      <br />
+      <div class="container content-section">
+        <div id="persona-selector" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Persona</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>
+                  Below are the two Persona I came up with according to the interview results from the previous section.
+                  The template for the below empathy map are taken from
+                  <a href="https://www.figma.com/community/file/1126846262476709690" target="_blank">Figma</a>.
+                </p>
+                <div id="questions" class="row inset-box">
+                  <div class="question-box-opaque">
+                    <strong class="main-question-header" style="font-size: 20px">Interface Problems</strong>
+                    <ul class="col-md-12">
+                      <strong class="main-question-header">Persona 1</strong>
+                      <div class="container">
+                        <li>
+                          Using the UI keyboard with a controller is annoying and hard. It takes far more time to type
+                          things using the controller than when typing on a computer
+                        </li>
+                        <li>Sometimes, it takes some time for the key input to be reflected on the console side</li>
+                        <li>With wired controllers, the wire can get in the player's way</li>
+                      </div>
+                    </ul>
+                    <br />
+                    <ul class="col-md-12">
+                      <strong class="main-question-header">Perona 2</strong>
+                      <div class="container">
+                        <li>The user is having trouble figuring out the correct sensitivity of joysticks</li>
+                        <li>
+                          Certain buttons, especially the square button is hard to press while using other buttons
+                        </li>
+                        <li>
+                          Plugging in the wired headphone / mic on the controller causes the wire to interrupt key
+                          inputs. The mic plug in location should be improved
+                        </li>
+                        <li>Default key mapping differs between countries / continent</li>
+                        <li>Pressing down the joystick vertically is hard without tilting or moving it.</li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <div id="questions" class="row inset-box">
+                  <div class="question-box-opaque">
+                    <strong class="main-question-header" style="font-size: 20px"
+                      >How and Why each Persona Represents the Users</strong
+                    >
+                    <ul class="col-md-12">
+                      <div class="container">
+                        <p>
+                          Both personas have some similarities with some differences. First, both personas represent the
+                          user who does not use PS4 from day-to-day basis, and also focuses on the fact that the user
+                          has some experiences using a computer and/or other consoles such as XBox. Now, the first thing
+                          that is most important to note is that the PS4 controller must be used with the PS4 in this
+                          case. It is true that there are softwares that allows PS4/XBox controllers to be used on
+                          computers, but in both personas, I assumed that PS4 controllers are only used when using PS4.
+                        </p>
+                        <p>
+                          In the case of persona 1, I focused on how the user would feel and experience when touching
+                          the PS4 / PS4 controller for the first time. Clearly, one has to set up their account,
+                          purchase a game, connect to the internet, etc. Most or all of these steps require a user to
+                          use the controller, and most importantly, it involves a lot of console side UI keyboard inputs
+                          (ex. typing keyword when searching for an app, entering wifi password). This can take a lot of
+                          time especially when compared to keyboard inputs on a standard PC, so that is what I focused
+                          on. In other words, this persona focuses on potential additional features that could be added
+                          to the controller to ease the keyboard inputs.
+                        </p>
+                        <p>
+                          In the case of persona 2, I focused on the strengths and weaknesses of the controller itself.
+                          Figuring out sensitivity of the keys and buttons, how to plug microphones into the controller,
+                          how it fits the user's hand is focused. This persona is made from the previous interview
+                          section where users mentioned how the controller can not fit well for people with smaller
+                          hands, or if one has a big hand, that it is hard to press a certain combination of buttons at
+                          the same time.
+                        </p>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <button class="btn btn-warning" onclick="showPersona(1);">Show Persona 1</button>
+            <button class="btn btn-success" onclick="showPersona(2);">Show Persona 2</button>
+          </div>
+          <div id="persona-img" class="text-center" style="width: 100%">
+            <br />
+            <img class="persona-img rounded" src="img/persona1.png" alt="Persona 1" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="storyboard">
+      <br />
+      <div class="container content-section">
+        <div id="storyboard-main" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Story Board</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>
+                  Below is the storyboard for persona 1 from previous section. The person is new to Play Station, and
+                  the end goal is to purchace and launch the game. However, since he is renting his friend's
+                  PlayStation, the original set up of the device is completed. He just needs to get used to the PS4
+                  controller and get a sense of how to navigate through the platform. Although this story board might
+                  not seem to reflect the user experience of the PlayStation4 Controller, navigating through the console
+                  requires getting used to the controller. Thus, setting up wi-fi, going to the store, launching the
+                  game and taking a look at the key mapping setting does describe the user experience of using the
+                  controller.
+                </p>
+                <p>Pleae read the storyboard from top left to bottom right, row by row.</p>
+              </div>
+            </div>
+          </div>
+          <div id="persona-img" class="text-center" style="width: 100%">
+            <br />
+            <img class="persona-img rounded" src="img/story.png" alt="StoryBoard" />
+          </div>
+          <br />
+          <p>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#dialogue"
+              aria-expanded="false"
+              aria-controls="dialogue"
+            >
+              Read the Dialogue in Text
+            </button>
+          </p>
+          <div class="collapse" id="dialogue">
+            <div id="questions" class="row inset-box">
+              <div class="question-box-opaque">
+                <ul class="col-md-12">
+                  <p>
+                    1. Sam is planning to purchace and play the game using the controller. He first starts up the play
+                    station.
+                  </p>
+                  <p>
+                    2. Since it is Sam”s first time touching the controller, he looks through and plays around with how
+                    the button feels.
+                  </p>
+                  <p style="margin-left: 30px">Sam: "Oh, it's easy to grip!"</p>
+                  <p>3. He tries to connect to the internet so that he can access the store</p>
+                  <p style="margin-left: 30px">Sam: "How do I use this keybaord?"</p>
+                  <p>4. He makes his way to the store and searches the game using the UI keyboard with controller.</p>
+                  <p style="margin-left: 30px">Sam: "Arrow Buttons are useful here"</p>
+                  <p>5. He enters his credit card information using the controller and UI keyboard.</p>
+                  <p style="margin-left: 30px">Sam: "This takes so much time to input."</p>
+                  <p>
+                    6. After the game got installed, he opened the new game and looked throught the key mapping, testing
+                    out the new game.
+                  </p>
+                  <p style="margin-left: 30px">Sam: "Square button is hard to reach."</p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

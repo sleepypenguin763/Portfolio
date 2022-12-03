@@ -95,28 +95,31 @@
     </div>
     <div class="modal closed" id="modal">
       <div class="modal-guts">
-        <h4>ポップアップウィンドウ</h4>
-        <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-airplane" viewBox="0 0 20 20">
+            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+          </svg>
+          Details About This Project</h4>
+        <br />
         <p>
-          Inedit (Brandazine) is a fashion retail service for content creators. It is an exclusive fashion rental
-          service for creators on Instagram and Youtube. Creators pay a monthly subscription to gain unlimited access to
-          fashion products and the opportunity to sell their content to brands. They were founded in 2020 and are based
-          in South Korea with a team size of 10. The company is co-founded by Matt and Keon, who’ve both been in the
-          creator space for over 4 years, as well as Ikhan, whose co-founded a fashion rental company previously.
-          Brandazine has grown to $80K MRR with 100 brands and 500 creators and have stayed profitable for the past 5
-          months through positive unit economics. The users of this application include content creators and the fashion
-          brands. Based on a conversation with the co-founder, Keon, there seems to be a content creator side of the
-          product for mobile, but no mobile product for the brand side yet. Inedit (Brandazine) is a fashion retail
-          service for content creators. It is an exclusive fashion rental service for creators on Instagram and Youtube.
-          Creators pay a monthly subscription to gain unlimited access to fashion products and the opportunity to sell
-          their content to brands. They were founded in 2020 and are based in South Korea with a team size of 10. The
-          company is co-founded by Matt and Keon, who’ve both been in the creator space for over 4 years, as well as
-          Ikhan, whose co-founded a fashion rental company previously. Brandazine has grown to $80K MRR with 100 brands
-          and 500 creators and have stayed profitable for the past 5 months through positive unit economics. The users
-          of this application include content creators and the fashion brands. Based on a conversation with the
-          co-founder, Keon, there seems to be a content creator side of the product for mobile, but no mobile product
-          for the brand side yet.
-          <a href="https://brandazine.com/">Here</a> is the link to the startup's website.
+          This was the fist time for me to develop a React application from scratch. I decided to use OpenSky API to
+          retreive real-time flight data, and decided to present that on my webpage. At any point in time, there are at
+          least 4500 flights being operated, so fetching this many data point caused efficiency problems.
+        </p>
+        <p>
+          OpenSky API only provides the data regarding a flight's altitude, speed, and location, so I made my own mock
+          REST API using publically available dataset that maps the callsign of the plane to its route (origin and
+          destination). This caused my application to make thousands of API requests when loading the page, leading to
+          slower page loading time. Since the assignment required to only use one page, I was not able to implement
+          pagination/multi-page application, but in order to overcome Google Chrome's error of overly making API request
+          at one time (and to increase load efficiency), I decided to load the data in batch.
+        </p>
+        <p class="inline-link">
+          For more details, please view my <a
+          href="https://github.com/sleepypenguin763/Development"
+          target="_blank"
+          >github repository</a
+        >.
         </p>
       </div>
     </div>
@@ -353,7 +356,12 @@
                       </svg>
                       View Details
                     </a>
-                    <a class="btn btn-info m-2" aria-disabled="false" href="./RedesignPage/redesigned.html" target="_blank">
+                    <a
+                      class="btn btn-info m-2"
+                      aria-disabled="false"
+                      href="./RedesignPage/redesigned.html"
+                      target="_blank"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -361,13 +369,70 @@
                         fill="currentColor"
                         class="bi bi-globe"
                         viewBox="0 0 16 16"
-                        style="margin-top: -3px; margin-right: 2px; color: black;"
+                        style="margin-top: -3px; margin-right: 2px; color: black"
                       >
                         <path
                           d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
                         />
                       </svg>
                       View Redesigned Page
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-5">
+              <div class="card cardBg text-white">
+                <div class="card-img-top">
+                  <img src="./PersonaPage/img/persona1.png" class="card-img-top card-img-height" alt="..." />
+                  <div style="position: absolute; top: 10px; left: 16px"></div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Interface Analysis & Persona</h5>
+                  <h6 class="card-subtitle mt-2 mb-2 text-muted align-text-bottom">
+                    <!-- https://icons.getbootstrap.jp/icons/calendar3/ -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-calendar3"
+                      viewBox="0 0 16 16"
+                      style="margin-top: -4px; margin-right: 2px"
+                    >
+                      <path
+                        d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                      />
+                      <path
+                        d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                      />
+                    </svg>
+                    September 2022
+                  </h6>
+
+                  <p class="card-text">
+                    Most interfaces that we use in day-to-day life are designed so that anyone can use it without much
+                    instructions. I picked a PS4 controller as an interface, and made observations / interviews
+                    regarding the usage, usability, and problems surrounding this interface. From these observations, I
+                    made two personas that represents how user uses the interface, and how it can be further improved.
+                  </p>
+                  <div class="text-center mx-auto">
+                    <a class="btn btn-primary m-2" aria-disabled="false" href="./PersonaPage/index.html">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-globe"
+                        viewBox="0 0 16 16"
+                        style="margin-top: -3px; margin-right: 2px"
+                      >
+                        <path
+                          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                        />
+                      </svg>
+                      View Details
                     </a>
                   </div>
                 </div>
