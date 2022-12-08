@@ -130,6 +130,11 @@ p {
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
 }
 
+.tester {
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+
 .inline-link a:hover {
   color: rgb(0, 0, 0);
   box-shadow: inset 200px 0 0 0 var(--body-text-color);
