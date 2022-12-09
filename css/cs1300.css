@@ -271,16 +271,44 @@ ul {
 }
 
 .icon-hover-effect:hover {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-.noselect { /* For personal debugging purpose https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+.noselect {
+  /* For personal debugging purpose https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.fadeIn.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.circle-img {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.pageTop-img {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
 }
